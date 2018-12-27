@@ -1,0 +1,16 @@
+parameters:
+    beta_frames: 1000
+    buffer_size: 100000
+    batch_size: 64.0
+    eps_start: 1.0
+    eps_end: 0.001
+    eps_decay: 0.995
+    gamma: 0.99
+    hidden_layers: [64,64,64,32]
+    lr: 0.5
+    n_episodes: 2000
+    p_alpha: 0.75
+    p_beta: 0.4
+    seed: 0.0
+    tau: .001
+    update_every: 3.0
