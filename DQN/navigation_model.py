@@ -1,5 +1,12 @@
 #!usr/bin/env python
 
+############################################################
+# Copyright (C) 2019 Yuri Plotkin (plotkiny@gmail.com)     #
+# Permission given to modify the code as long as you keep  #
+# this decleration at the top                              #
+############################################################
+
+
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
