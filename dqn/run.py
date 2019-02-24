@@ -10,12 +10,10 @@
 import argparse
 import numpy as np
 import torch
-import yaml
-import yamlordereddictloader
 from collections import deque
 from navigation_agent import Agent
 from unityagents import UnityEnvironment
-
+from utils.funcs import load_yaml
 
 def get_environment_info(env, brain, brain_name):
 
@@ -37,10 +35,6 @@ def get_environment_info(env, brain, brain_name):
     print('States have length:', state_size)
 
     return state_size, action_size
-
-
-def load_yaml(file_obj):
-    return yaml.load(file_obj, Loader=yamlordereddictloader.Loader)
 
 
 def main(config, train, env, brain_name, state_size, action_size):
