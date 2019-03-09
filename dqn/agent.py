@@ -11,7 +11,7 @@ import random
 import torch
 import torch.nn.functional as F
 import torch.optim as optim
-from navigation_model import DQN
+from dqn import DQN
 from utils.replay_buffer import PriorityReplayBuffer
 
 device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
@@ -143,9 +143,9 @@ class Agent():
         self.optimizer.step()
 
         # ------------------- update target network ------------------- #
-        self.soft_update(self.qnetwork_local, self.qnetwork_target, self.tau)
+        self.soft_update(self.qnetwork_target, self.qnetwork_local, self.tau)
 
-    def soft_update(self, local_model, target_model, tau):
+    def soft_update(self, target_model, local_model, tau):
 
         """Soft update model parameters.
         θ_target = τ*θ_local + (1 - τ)*θ_target

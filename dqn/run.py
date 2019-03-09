@@ -11,7 +11,7 @@ import argparse
 import numpy as np
 import torch
 from collections import deque
-from navigation_agent import Agent
+from agent import Agent
 from unityagents import UnityEnvironment
 from utils.funcs import load_yaml
 

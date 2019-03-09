@@ -9,8 +9,9 @@ parameters:
     hidden_layers: [64,64,64,32]
     lr: 0.5
     n_episodes: 2000
-    p_alpha: 0.75
-    p_beta: 0.4
+    p_alpha: 0.95
+    p_beta: 0.001
+    priority: True
     seed: 0.0
     tau: .001
     update_every: 3.0
