@@ -1,0 +1,26 @@
+parameters:
+    batch_size: 200
+    beta_frames: 1000
+    buffer_size: 100000
+    data_prefix: "data/2019-2-28-"
+    env_solved: 0.50
+    eps_start: 1.0
+    eps_end: 0.001
+    eps_decay: 0.995
+    gamma: 0.99
+    hidden_layers: [400,300]
+    lr_actor: 0.0001
+    lr_critic: 0.001
+    max_steps: 1000
+    memory_size: 1024
+    multi_agent: True
+    n_episodes: 2000
+    nb_agents: 2
+    p_alpha: 0.95
+    p_beta: 0.001
+    priority: False
+    seed: 0.0
+    solved: False
+    tau: 0.001
+    update_every: 2
+    weight_decay: 0.0001
