@@ -35,8 +35,7 @@ class BaseConfiguration(object):
         self.episode_rewards = []
 
 
-
-class BaseAgent():
+class BaseAgent(object):
     def __init__(self, params):
         super(BaseAgent, self).__init__(params)
         self.config = params

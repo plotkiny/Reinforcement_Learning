@@ -125,4 +125,3 @@ class DeterministicActorCriticNet(nn.Module):
     def critic(self, phi, a):
         return self.network.fc_critic(self.network.critic_body(phi, a))
 
-

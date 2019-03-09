@@ -124,3 +124,4 @@ class DDPGAgent(BaseAgent, BaseConfiguration):
 
     def reset(self):
         self.random_process.reset_states()
+

@@ -1,5 +1,11 @@
 #!usr/bin/env python
 
+############################################################
+# Copyright (C) 2019 Yuri Plotkin (plotkiny@gmail.com)     #
+# Permission given to modify the code as long as you keep  #
+# this decleration at the top                              #
+############################################################
+
 import numpy as np
 import torch
 import yaml
@@ -26,5 +32,4 @@ def make_tensor(x):
     if not isinstance(x, torch.FloatTensor):
         return torch.tensor(x, device=device, dtype=torch.float32)
     return x
-
 
