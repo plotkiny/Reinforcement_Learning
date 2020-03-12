@@ -1,7 +1,7 @@
 #!usr/bin/env python
 
 ############################################################
-# Copyright (C) 2019 Yuri Plotkin (plotkiny@gmail.com)     #
+# Copyright (C) 2020 Yuri Plotkin (plotkiny@gmail.com)     #
 # Permission given to modify the code as long as you keep  #
 # this declaration at the top                              #
 ############################################################
